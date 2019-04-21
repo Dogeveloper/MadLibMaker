@@ -3,6 +3,7 @@ package com.robbertt.MadLibMaker;
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileSystemView;
+import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.nio.file.Files;
@@ -37,12 +38,12 @@ public class Main {
         }
         if(selectedFile == null) {
             //quit if they exit out.
-            System.exit(0);
+            System.exit(1);
         }
         //ask the user if this is the madlib they want to load.
         int confirmResult = JOptionPane.showConfirmDialog(null, "Would you like to load the Madlib " + selectedFile.getName() + "?");
         if(confirmResult != 0) {
-            System.exit(0);
+            System.exit(1);
         }
         //display user options and replace.
         try {
