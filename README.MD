@@ -7,5 +7,5 @@ Once you've done that, save your file as a .madlib file and run the program. In 
 
 ## Download
 The download can be found here (requires Java 8):
-
+https://github.com/Dogeveloper/MadLibMaker/releases
 
