@@ -58,8 +58,8 @@ public class Main {
                 //extract brackets
                 String templateNoBrackets = template.replace("<", "");
                 templateNoBrackets = templateNoBrackets.replace(">", "");
-                //get user input.
-                String str = JOptionPane.showInputDialog(templateNoBrackets);
+                //get user input, and make first letter upper case for display.
+                String str = JOptionPane.showInputDialog(templateNoBrackets.substring(0, 1).toUpperCase() + templateNoBrackets.substring(1));
                 //replace original string with new info.
                 madlib = madlib.replace(template, str);
             }
