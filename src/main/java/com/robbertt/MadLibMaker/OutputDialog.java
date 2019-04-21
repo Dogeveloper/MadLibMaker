@@ -21,6 +21,7 @@ public class OutputDialog extends JFrame {
         quitButton.addActionListener((event) -> {
             System.exit(0);
         });
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         saveButton.addActionListener((event) -> {
             JFileChooser jfc = new JFileChooser();
