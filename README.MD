@@ -1,5 +1,5 @@
 # MadLibMaker
-MadLibMaker lets you take text files and load them into mad libs. You can create such files by writing your mad lib, and put anything you want to replace in brackets with the word type.
+MadLibMaker lets you take text files and load them into mad libs. You can create such files by writing your mad lib, and putting anything you want to replace in brackets with the type of word.
 
 Example: ```I went to the store and bought some <noun>.```
 
