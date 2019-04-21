@@ -15,6 +15,7 @@ public class OutputDialog extends JFrame {
         setTitle("Madlib Maker");
         setSize(Main.scaleWindowSize(0.2, 0.3));
         setContentPane(rootPane);
+        setResizable(false);
         rootPane.setBorder(new EmptyBorder(10, 10, 10, 10));
         //fill in values
         textPane1.setText(output);
