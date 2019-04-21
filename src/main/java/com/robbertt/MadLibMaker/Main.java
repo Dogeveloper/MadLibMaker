@@ -6,6 +6,7 @@ import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.regex.Matcher;
@@ -22,7 +23,7 @@ public class Main {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }catch(Exception ex) {
-            ex.printStackTrace();
+            new ErrorDialog(ex).setVisible(true);
         }
         //prompt user to pick a file to load
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
@@ -68,7 +69,7 @@ public class Main {
             o.setVisible(true);
         }
         catch(Exception e) {
-
+            new ErrorDialog(e).setVisible(true);
         }
 
     }
