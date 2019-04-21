@@ -73,4 +73,12 @@ public class Main {
         }
 
     }
+
+    //Pixel Dimension to Percentage Dimension
+    protected static Dimension scaleWindowSize(double p1, double p2) {
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int d1 = Math.round(screenSize.width * (float) p1);
+        int d2 = Math.round(screenSize.height * (float) p2);
+        return new Dimension(d1, d2);
+    }
 }
