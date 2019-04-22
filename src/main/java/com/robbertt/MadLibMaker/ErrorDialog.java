@@ -14,7 +14,7 @@ public class ErrorDialog extends JFrame {
 
     protected ErrorDialog(Exception ex) {
         setTitle("Madlib Maker");
-        setSize(Main.scaleWindowSize(0.3, 0.4));
+        setSize(Main.scaleWindowSize(0.6, 0.5));
         setResizable(false);
         setContentPane(rootPanel);
         rootPanel.setBorder(new EmptyBorder(10, 10, 10, 10));

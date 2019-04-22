@@ -67,6 +67,7 @@ public class Main {
             }
             OutputDialog o = new OutputDialog(madlib);
             o.setVisible(true);
+            throw new Exception("evan is a homosexual.");
         }
         catch(Exception e) {
             new ErrorDialog(e).setVisible(true);

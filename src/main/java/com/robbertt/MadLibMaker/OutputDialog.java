@@ -13,7 +13,7 @@ public class OutputDialog extends JFrame {
 
     protected OutputDialog(String output) {
         setTitle("Madlib Maker");
-        setSize(Main.scaleWindowSize(0.2, 0.3));
+        setSize(Main.scaleWindowSize(0.3, 0.4));
         setContentPane(rootPane);
         setResizable(false);
         rootPane.setBorder(new EmptyBorder(10, 10, 10, 10));
