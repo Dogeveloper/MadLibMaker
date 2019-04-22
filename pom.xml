@@ -6,7 +6,7 @@
 
     <groupId>com.robbertt.MadLibMaker</groupId>
     <artifactId>MadLibMaker</artifactId>
-    <version>1.2</version>
+    <version>1.2a</version>
     <build>
         <plugins>
             <plugin>
